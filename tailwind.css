@@ -19,15 +19,10 @@
 
 @media screen and (min-width: 992px) {
   .grid-view {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
       "audio mobile mobile"
       "audio globe  globe"
       "zap   zap    resource";
-    gap: 30px;
-    align-items: stretch;
   }
 
   #audio {
