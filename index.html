@@ -40,7 +40,7 @@
     </header>
     <!-- Small screen header -->
     <header
-      class="flex lg:hidden justify-between items-center px-5 py-4 border-b-2 solid border-[#412567]"
+      class="flex lg:hidden justify-between items-center px-12 md:px-20 py-4 border-b-2 solid border-[#412567]"
     >
       <h1 class="text-3xl font-bold">
         <a href="./index.html">Tech<span class="gradient-text">Wave</span></a>
@@ -54,10 +54,10 @@
     <main>
       <!-- Hero Section -->
       <section
-        class="py-24 flex flex-col items-center justify-between gap-10 text-center bg-[url(./assets/sm-hero-bg.png)] lg:bg-[url(./assets/hero-bg.png)] bg-center bg-no-repeat bg-cover animate"
+        class="py-24 flex flex-col items-center justify-between gap-10 text-center bg-[url(./assets/sm-hero-bg.png)] md:bg-[url(./assets/hero-bg.png)] bg-center bg-no-repeat bg-cover animate"
       >
         <div
-          class="bg-[url(./assets/hero-circle.png)] bg-center bg-no-repeat rounded-full lg:h-96 lg:w-96 h-52 w-52 flex items-center justify-center relative animate"
+          class="bg-[url(./assets/hero-circle.png)] bg-center bg-no-repeat rounded-full h-52 w-52 md:h-80 md:w-80 lg:h-96 lg:w-96 flex items-center justify-center relative animate"
         >
           <button
             class="absolute -top-3 right-0 lg:top-6 lg:right-10 text-lg font-semibold bg-[#00FF88] text-black uppercase px-4 py-3 rounded-full border-none drop-shadow-lg drop-shadow-[#00ff88]/50 animate-pulse"
@@ -67,7 +67,7 @@
           <img
             src="./assets/microphone.png"
             alt="Microphone Icon"
-            class="h-20 lg:h-52"
+            class="h-20 md:h-36 lg:h-52"
           />
         </div>
         <div class="animate">
@@ -100,7 +100,7 @@
       </section>
       <!-- About Section -->
       <section
-        class="flex flex-col items-center justify-center text-center max-w-[350px] md:max-w-[700px] lg:max-w-[1200px] mx-auto pt-12 pb-28"
+        class="flex flex-col items-center justify-center text-center max-w-[350px] md:max-w-[600px] lg:max-w-[1200px] mx-auto pt-12 pb-28"
       >
         <div class="border-b-2 solid border-[#412567] mb-20 animate">
           <h2 class="font-bold text-3xl lg:text-5xl mb-4">About the podcast</h2>
@@ -114,16 +114,16 @@
             their day with TechWave.
           </p>
         </div>
-        <div class="grid grid-cols-2 grid-rows-2 lg:flex gap-20 max-w-[1200px]">
+        <div class="grid grid-cols-2 grid-rows-2 lg:flex gap-20">
           <div class="animate">
             <h3 class="text-[#00FF88] font-black text-5xl mb-4">150K+</h3>
-            <p class="text-base font-normal opacity-80 uppercase">
+            <p class="text-sm md:text-base font-normal opacity-80 uppercase">
               Monthly Listener
             </p>
           </div>
           <div class="animate">
             <h3 class="text-[#00FF88] font-black text-5xl mb-4">200+</h3>
-            <p class="text-base font-normal opacity-80 uppercase">
+            <p class="text-sm md:text-base font-normal opacity-80 uppercase">
               Episodes Published
             </p>
           </div>
@@ -131,27 +131,27 @@
             <h3 class="text-[#00FF88] font-black text-5xl mb-4">
               4.9<i class="fa-solid fa-star" style="color: #00ff88"></i>
             </h3>
-            <p class="text-base font-normal opacity-80 uppercase">
+            <p class="text-sm md:text-base font-normal opacity-80 uppercase">
               Average Rating
             </p>
           </div>
           <div class="animate">
             <h3 class="text-[#00FF88] font-black text-5xl mb-4">50+</h3>
-            <p class="text-base font-normal opacity-80 uppercase">
+            <p class="text-sm md:text-base font-normal opacity-80 uppercase">
               Industry Experts
             </p>
           </div>
         </div>
       </section>
       <!-- Choose Section -->
-      <section class="px-5 py-10 lg:px-48 lg:py-28 bg-[#230E3D]">
+      <section class="px-10 py-10 lg:px-48 lg:py-28 bg-[#230E3D]">
         <h2 class="font-bold text-4xl lg:text-5xl mb-4 text-center animate">
           Why Choose TechWave
         </h2>
-        <div id="feature-container" class="mt-10">
+        <div class="flex flex-col gap-4 items-center justify-center grid-view mt-10">
           <div
             id="audio"
-            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
+            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate w-full"
           >
             <img
               src="./assets/headphone.png"
@@ -167,7 +167,7 @@
           </div>
           <div
             id="mobile"
-            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center  cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
+            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center  cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate w-full"
           >
             <img
               src="./assets/device.png"
@@ -182,7 +182,7 @@
           </div>
           <div
             id="globe"
-            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center  cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
+            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center  cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate w-full"
           >
             <img
               src="./assets/location.png"
@@ -196,7 +196,7 @@
           </div>
           <div
             id="zap"
-            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
+            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate w-full"
           >
             <img
               src="./assets/zap-fast.png"
@@ -213,7 +213,7 @@
           </div>
           <div
             id="resource"
-            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
+            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate w-full"
           >
             <img
               src="./assets/resource.png"
@@ -234,7 +234,7 @@
           Featured Episodes
         </h2>
         <div
-          class="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-2.5 mt-10"
+          class="flex flex-col md:flex-row items-center md:items-start justify-center gap-2.5 mt-10 px-12"
         >
           <div
             class="bg-[#351165]/40 rounded-xl flex flex-col justify-center max-w-96 transform ease-in-out duration-300 hover:-translate-y-1.5 cursor-pointer animate"
@@ -350,17 +350,17 @@
         </div>
       </section>
       <!-- Host Section -->
-      <section class="mx-5 my-4 lg:my-32 lg:mx-52">
+      <section class="mx-10 my-4 md:mx-28 md:my-20 lg:my-32 lg:mx-52">
         <h2 class="font-bold text-5xl mb-4 text-center animate">Meet The host</h2>
         <div
-          class="w-full bg-[#351165]/40 rounded-xl flex flex-col lg:flex-row items-center justify-center gap-6 p-10 mt-10  transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
+          class="w-full bg-[#351165]/40 rounded-xl flex flex-col md:flex-row items-center justify-center gap-6 p-10 mt-10 transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
         >
           <img
             src="./assets/host.png"
             alt="Host's Image"
             class="h-36 w:36 lg:w-52 lg:h-52"
           />
-          <div class="text-center lg:text-left">
+          <div class="text-center md:text-left">
             <h1 class="text-2xl lg:text-3xl font-bold mb-4">Alex Kumar</h1>
             <p class="text-base opacity-60 mb-4">
               Tech entrepreneur, productivity expert, and lifelong learner. Alex
@@ -369,7 +369,7 @@
               insights from industry leaders and practical advice for anyone
               looking to grow in tech.
             </p>
-            <div class="flex gap-2 justify-center lg:justify-start">
+            <div class="flex gap-2 justify-center md:justify-start">
               <div
                 class="h-10 w-10 border-2 border-solid border-[#533C72] rounded-full flex items-center justify-center cursor-pointer"
               >
@@ -408,7 +408,7 @@
       </section>
     </main>
     <footer
-      class="bg-[url(./assets/sm-footer-bg.png)] lg:bg-[url(./assets/footer-bg.png)] bg-center bg-cover bg-no-repeat w-full text-center mx-auto py-5 lg:py-32"
+      class="bg-[url(./assets/sm-footer-bg.png)] md:bg-[url(./assets/footer-bg.png)] bg-center bg-cover bg-no-repeat w-full text-center mx-auto py-5 lg:py-32"
     >
       <h1 class="text-4xl lg:text-6xl font-bold">
         Tech<span class="gradient-text">Wave</span>
