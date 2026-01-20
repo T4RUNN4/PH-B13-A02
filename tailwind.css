@@ -41,11 +41,21 @@
   display: grid;
   grid-template-columns: 3;
   grid-template-rows: 3;
-  grid-template-areas: 
-  'audio mobile mobile'
-  'audio globe  globe'
-  'zap   zap    resource';
+  grid-template-areas:
+    "audio mobile mobile"
+    "audio globe  globe"
+    "zap   zap    resource";
   gap: 30px;
+}
+
+.animate {
+  transition: translateY(100%);
+  opacity: 0;
+  animation: slideup 1s ease-in-out 0.5s forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite forwards;
 }
 
 @media screen and (max-width: 576px) {
@@ -53,5 +63,34 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(0%);
+  }
+  5% {
+    transform: translateY(-30%);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  13% {
+    transform: translateY(-15%);
+  }
+  18% {
+    transform: translateY(0);
   }
 }

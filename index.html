@@ -23,16 +23,18 @@
       class="hidden lg:flex justify-between items-center px-48 py-4 border-b-2 solid border-[#412567]"
     >
       <h1 class="text-5xl font-bold">
-        Tech<span class="gradient-text">Wave</span>
+        <a href="./index.html">Tech<span class="gradient-text">Wave</span></a>
       </h1>
       <nav>
         <ul class="list-none flex gap-8 text-base font-medium opacity-90">
-          <li>About</li>
-          <li>Episodes</li>
-          <li>Host</li>
+          <li class="cursor-pointer">About</li>
+          <li class="cursor-pointer">Episodes</li>
+          <li class="cursor-pointer">Host</li>
         </ul>
       </nav>
-      <button class="gradient px-4 py-3 text-base font-semibold rounded-full">
+      <button
+        class="gradient px-4 py-3 text-base font-semibold rounded-full cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5"
+      >
         Subscribe <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
       </button>
     </header>
@@ -41,20 +43,24 @@
       class="flex lg:hidden justify-between items-center px-5 py-4 border-b-2 solid border-[#412567]"
     >
       <h1 class="text-3xl font-bold">
-        Tech<span class="gradient-text">Wave</span>
+        <a href="./index.html">Tech<span class="gradient-text">Wave</span></a>
       </h1>
-      <img src="./assets/hamburger-menu.png" alt="hamburger-menu" />
+      <img
+        src="./assets/hamburger-menu.png"
+        alt="hamburger-menu"
+        class="cursor-pointer"
+      />
     </header>
     <main>
       <!-- Hero Section -->
       <section
-        class="py-24 flex flex-col items-center justify-between gap-10 text-center bg-[url(./assets/sm-hero-bg.png)] lg:bg-[url(./assets/hero-bg.png)] bg-center bg-no-repeat bg-cover"
+        class="py-24 flex flex-col items-center justify-between gap-10 text-center bg-[url(./assets/sm-hero-bg.png)] lg:bg-[url(./assets/hero-bg.png)] bg-center bg-no-repeat bg-cover animate"
       >
         <div
-          class="bg-[url(./assets/hero-circle.png)] bg-center bg-no-repeat rounded-full lg:h-96 lg:w-96 h-52 w-52 flex items-center justify-center relative"
+          class="bg-[url(./assets/hero-circle.png)] bg-center bg-no-repeat rounded-full lg:h-96 lg:w-96 h-52 w-52 flex items-center justify-center relative animate"
         >
           <button
-            class="absolute -top-3 right-0 lg:top-6 lg:right-10 text-lg font-semibold bg-[#00FF88] text-black uppercase px-4 py-3 rounded-full border-none drop-shadow-lg drop-shadow-[#00ff88]/50"
+            class="absolute -top-3 right-0 lg:top-6 lg:right-10 text-lg font-semibold bg-[#00FF88] text-black uppercase px-4 py-3 rounded-full border-none drop-shadow-lg drop-shadow-[#00ff88]/50 animate-pulse"
           >
             New
           </button>
@@ -64,7 +70,7 @@
             class="h-20 lg:h-52"
           />
         </div>
-        <div>
+        <div class="animate">
           <h1 class="font-extrabold text-4xl lg:text-6xl mb-2">TechWave</h1>
           <p class="text-base mb-6 opacity-80">
             Your daily dose of tech insights, productivity hacks, and personal
@@ -72,7 +78,7 @@
           </p>
           <div class="flex gap-3 items-center justify-center">
             <button
-              class="text-base font-medium gradient px-4 py-3 rounded-full"
+              class="text-base font-medium gradient px-4 py-3 rounded-full cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5"
             >
               <img
                 src="./assets/spotify.png"
@@ -81,7 +87,7 @@
               />Listen of spotify
             </button>
             <button
-              class="text-base font-medium bg-none border-2 border-solid border-[#00FF88] text-[#00FF88] px-4 py-3 rounded-full"
+              class="text-base font-medium bg-none border-2 border-solid border-[#00FF88] text-[#00FF88] px-4 py-3 rounded-full cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5"
             >
               <img
                 src="./assets/message.png"
@@ -96,7 +102,7 @@
       <section
         class="flex flex-col items-center justify-center text-center max-w-[350px] md:max-w-[700px] lg:max-w-[1200px] mx-auto pt-12 pb-28"
       >
-        <div class="border-b-2 solid border-[#412567] mb-20">
+        <div class="border-b-2 solid border-[#412567] mb-20 animate">
           <h2 class="font-bold text-3xl lg:text-5xl mb-4">About the podcast</h2>
           <p class="text-base/loose opacity-80 max-w-3xl mb-20">
             TechWave is your go-to podcast for staying ahead in the fast-paced
@@ -109,19 +115,19 @@
           </p>
         </div>
         <div class="grid grid-cols-2 grid-rows-2 lg:flex gap-20 max-w-[1200px]">
-          <div>
+          <div class="animate">
             <h3 class="text-[#00FF88] font-black text-5xl mb-4">150K+</h3>
             <p class="text-base font-normal opacity-80 uppercase">
               Monthly Listener
             </p>
           </div>
-          <div>
+          <div class="animate">
             <h3 class="text-[#00FF88] font-black text-5xl mb-4">200+</h3>
             <p class="text-base font-normal opacity-80 uppercase">
               Episodes Published
             </p>
           </div>
-          <div>
+          <div class="animate">
             <h3 class="text-[#00FF88] font-black text-5xl mb-4">
               4.9<i class="fa-solid fa-star" style="color: #00ff88"></i>
             </h3>
@@ -129,7 +135,7 @@
               Average Rating
             </p>
           </div>
-          <div>
+          <div class="animate">
             <h3 class="text-[#00FF88] font-black text-5xl mb-4">50+</h3>
             <p class="text-base font-normal opacity-80 uppercase">
               Industry Experts
@@ -139,13 +145,13 @@
       </section>
       <!-- Choose Section -->
       <section class="px-5 py-10 lg:px-48 lg:py-28 bg-[#230E3D]">
-        <h2 class="font-bold text-4xl lg:text-5xl mb-4 text-center">
+        <h2 class="font-bold text-4xl lg:text-5xl mb-4 text-center animate">
           Why Choose TechWave
         </h2>
         <div id="feature-container" class="mt-10">
           <div
             id="audio"
-            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center"
+            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
           >
             <img
               src="./assets/headphone.png"
@@ -161,7 +167,7 @@
           </div>
           <div
             id="mobile"
-            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center"
+            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center  cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
           >
             <img
               src="./assets/device.png"
@@ -176,7 +182,7 @@
           </div>
           <div
             id="globe"
-            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center"
+            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center  cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
           >
             <img
               src="./assets/location.png"
@@ -190,7 +196,7 @@
           </div>
           <div
             id="zap"
-            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center"
+            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
           >
             <img
               src="./assets/zap-fast.png"
@@ -207,7 +213,7 @@
           </div>
           <div
             id="resource"
-            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center"
+            class="p-10 bg-[#351165]/40 rounded-4xl flex flex-col justify-center cursor-pointer transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
           >
             <img
               src="./assets/resource.png"
@@ -224,14 +230,14 @@
       </section>
       <!-- Popular Section -->
       <section class="px-5 py-10 lg:px-48 lg:py-28">
-        <h2 class="font-bold text-4xl lg:text-5xl mb-4 text-center">
+        <h2 class="font-bold text-4xl lg:text-5xl mb-4 text-center animate">
           Featured Episodes
         </h2>
         <div
           class="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-2.5 mt-10"
         >
           <div
-            class="bg-[#351165]/40 rounded-xl flex flex-col justify-center max-w-96"
+            class="bg-[#351165]/40 rounded-xl flex flex-col justify-center max-w-96 transform ease-in-out duration-300 hover:-translate-y-1.5 cursor-pointer animate"
           >
             <iframe
               src="https://www.youtube.com/embed/KKNCiRWd_j0?si=4J9B_UnGXc4tTOhf"
@@ -268,7 +274,7 @@
             </div>
           </div>
           <div
-            class="bg-[#351165]/40 rounded-xl flex flex-col justify-center max-w-96"
+            class="bg-[#351165]/40 rounded-xl flex flex-col justify-center max-w-96 transform ease-in-out duration-300 hover:-translate-y-1.5 cursor-pointer animate"
           >
             <iframe
               src="https://www.youtube.com/embed/9E2SdLD3Kpc?si=c-2Ili2eU3I-rrr5"
@@ -305,7 +311,7 @@
             </div>
           </div>
           <div
-            class="bg-[#351165]/40 rounded-xl flex flex-col justify-center max-w-96"
+            class="bg-[#351165]/40 rounded-xl flex flex-col justify-center max-w-96 transform ease-in-out duration-300 hover:-translate-y-1.5 cursor-pointer animate"
           >
             <iframe
               src="https://www.youtube.com/embed/UjqeYvBGhQw?si=zVgrlwHBVjoE-s7z"
@@ -345,9 +351,9 @@
       </section>
       <!-- Host Section -->
       <section class="mx-5 my-4 lg:my-32 lg:mx-52">
-        <h2 class="font-bold text-5xl mb-4 text-center">Meet The host</h2>
+        <h2 class="font-bold text-5xl mb-4 text-center animate">Meet The host</h2>
         <div
-          class="w-full bg-[#351165]/40 rounded-xl flex flex-col lg:flex-row items-center justify-center gap-6 p-10 mt-10"
+          class="w-full bg-[#351165]/40 rounded-xl flex flex-col lg:flex-row items-center justify-center gap-6 p-10 mt-10  transform ease-in-out duration-300 hover:-translate-y-1.5 animate"
         >
           <img
             src="./assets/host.png"
@@ -365,7 +371,7 @@
             </p>
             <div class="flex gap-2 justify-center lg:justify-start">
               <div
-                class="h-10 w-10 border-2 border-solid border-[#533C72] rounded-full flex items-center justify-center"
+                class="h-10 w-10 border-2 border-solid border-[#533C72] rounded-full flex items-center justify-center cursor-pointer"
               >
                 <img
                   src="./assets/linkedin.png"
@@ -374,12 +380,12 @@
                 />
               </div>
               <div
-                class="h-10 w-10 border-2 border-solid border-[#533C72] rounded-full flex items-center justify-center"
+                class="h-10 w-10 border-2 border-solid border-[#533C72] rounded-full flex items-center justify-center cursor-pointer"
               >
                 <img src="./assets/x.png" alt="twitter icon" class="h-4 w-4" />
               </div>
               <div
-                class="h-10 w-10 border-2 border-solid border-[#533C72] rounded-full flex items-center justify-center"
+                class="h-10 w-10 border-2 border-solid border-[#533C72] rounded-full flex items-center justify-center cursor-pointer"
               >
                 <img
                   src="./assets/instagram.png"
@@ -388,7 +394,7 @@
                 />
               </div>
               <div
-                class="h-10 w-10 border-2 border-solid border-[#533C72] rounded-full flex items-center justify-center"
+                class="h-10 w-10 border-2 border-solid border-[#533C72] rounded-full flex items-center justify-center cursor-pointer"
               >
                 <img
                   src="./assets/youtube.png"
@@ -407,23 +413,25 @@
       <h1 class="text-4xl lg:text-6xl font-bold">
         Tech<span class="gradient-text">Wave</span>
       </h1>
-      <div class="flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-10 my-8">
+      <div
+        class="flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-10 my-8"
+      >
         <div class="flex gap-6 lg:gap-10">
-          <div class="flex items-center justify-center gap-2">
-            <img src="./assets/spotify.png" alt="Spotify Icon" />   
+          <div class="flex items-center justify-center gap-2 cursor-pointer">
+            <img src="./assets/spotify.png" alt="Spotify Icon" />
             <p class="text-base opacity-60">Spotify</p>
           </div>
-          <div class="flex items-center justify-center gap-2">
+          <div class="flex items-center justify-center gap-2 cursor-pointer">
             <img src="./assets/apple-podcast.png" alt="Apple Podcast Icon" />
             <p class="text-base opacity-60">Apple Podcast</p>
           </div>
         </div>
-        <div class="flex gap-6 lg:gap-10 ">
-          <div class="flex items-center justify-center gap-2">
+        <div class="flex gap-6 lg:gap-10">
+          <div class="flex items-center justify-center gap-2 cursor-pointer">
             <img src="./assets/youtube-podcast.png" alt="Youtube Icon" />
             <p class="text-base opacity-60">Youtube</p>
           </div>
-          <div class="flex items-center justify-center gap-2">
+          <div class="flex items-center justify-center gap-2 cursor-pointer">
             <img src="./assets/twitter.png" alt="Twitter Icon" />
             <p class="text-base opacity-60">Twitter</p>
           </div>
