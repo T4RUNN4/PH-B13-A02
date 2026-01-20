@@ -17,36 +17,33 @@
   background-image: linear-gradient(47deg, #f7e93f, #fb09b4, #9100f8);
 }
 
-#audio {
-  grid-area: audio;
-}
-
-#mobile {
-  grid-area: mobile;
-}
-
-#globe {
-  grid-area: globe;
-}
-
-#zap {
-  grid-area: zap;
-}
-
-#resource {
-  grid-area: resource;
-}
-
 @media screen and (min-width: 992px) {
   .grid-view {
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 3;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
       "audio mobile mobile"
       "audio globe  globe"
       "zap   zap    resource";
     gap: 30px;
+    align-items: stretch;
+  }
+
+  #audio {
+    grid-area: audio;
+  }
+  #mobile {
+    grid-area: mobile;
+  }
+  #globe {
+    grid-area: globe;
+  }
+  #zap {
+    grid-area: zap;
+  }
+  #resource {
+    grid-area: resource;
   }
 }
 
